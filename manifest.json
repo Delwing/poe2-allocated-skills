@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "PoE2 Trade Tooltips",
+  "version": "1.0",
+  "description": "Adds skill tooltips.",
+  "permissions": ["scripting"],
+  "host_permissions": [
+    "https://*.pathofexile.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.pathofexile.com/trade2*"],
+      "js": ["index.js"]
+    }
+  ]
+}

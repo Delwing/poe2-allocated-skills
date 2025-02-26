@@ -1,0 +1,26 @@
+name: Publish Release
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  release:
+    name: "Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: yarn install && yarn build
+      - name: action-zip
+        uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r poe2-trade-tooltips.zip dist
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          title: "Release"
+          files: poe2-trade-tooltips.zip
