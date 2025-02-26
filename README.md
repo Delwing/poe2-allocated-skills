@@ -8,7 +8,7 @@ Extension will add automatically details to item card, just like in case of anoi
 ## Installation
 
 ### Step 1: Download the Extension
-1. Download latest release .zip from [release page](https://github.com/Delwing/poe2-allocated-skills/releases/tag/latest) and unpack it.
+1. Download latest release .zip https://github.com/Delwing/poe2-allocated-skills/releases/download/latest/poe2-allocated-skills.zip and unpack it.
 
 ### Step 2: Load the Extension
 #### Chrome
