@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "PoE2 Trade Tooltips",
+  "name": "PoE2 Allocated Skills",
   "version": "1.0",
-  "description": "Adds skill tooltips.",
+  "description": "Adds allocated skills details to items.",
   "permissions": ["scripting"],
   "host_permissions": [
     "https://*.pathofexile.com/*"
